@@ -21,3 +21,10 @@
 - **Controller**: `@Controller` 어노테이션을 활용한 요청 핸들링 및 URL 매핑 (`/hi`, `/bye`)
 - **Model**: `Model` 객체를 이용해 컨트롤러에서 뷰(View)로 데이터 전달 (`addAttribute`)
 - **View**: Mustache 템플릿 엔진을 활용하여 동적 페이지 랜더링 실습
+
+### 🗓️ Day 2 - DTO, Entity, Repository 및 의존성 주입 (DI)
+
+* **Form Data & DTO:** View에서 전달된 폼 데이터를 수집하기 위한 `ArticleForm` DTO 구현
+* **Entity & Repository:** DB 테이블 매핑을 위한 `@Entity` 정의 및 `CrudRepository`를 활용한 데이터 저장(CRUD) 흐름 이해
+* **Dependency Injection:** `@Autowired` (필드 주입)의 개념과 실무 표준인 `@RequiredArgsConstructor` + `final` (생성자 주입)의 안전성(불변성, 컴파일 시점 오류 감지) 비교
+* **JPA & DDL Auto:** 서버 구동 시 Entity 기반 테이블 자동 생성 원리 및 실무 환경(`ddl-auto: none`)에서의 DB 안전 관리 이해
